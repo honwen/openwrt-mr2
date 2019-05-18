@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mr2
-PKG_VERSION:=20190506
+PKG_VERSION:=20190518
 PKG_RELEASE:=0.0.1
 PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
 

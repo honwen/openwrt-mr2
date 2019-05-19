@@ -8,8 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mr2
-PKG_VERSION:=20190518
-PKG_RELEASE:=0.0.1
+PKG_VERSION:=20190519
+PKG_RELEASE:=0.0.2
 PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
 
 # OpenWrt ARCH: arm, i386, x86_64, mips, mipsel
@@ -23,6 +23,9 @@ ifeq ($(ARCH),mipsel)
 endif
 ifeq ($(ARCH),arm)
 	PKG_ARCH:=_linux_arm6
+	ifneq ($(BOARD),bcm53xx)
+		PKG_ARCH:=_linux_arm7
+	endif
 endif
 ifeq ($(ARCH),i386)
 	PKG_ARCH:=_linux_386

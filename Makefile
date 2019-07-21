@@ -8,8 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mr2
-PKG_VERSION:=20190519
-PKG_RELEASE:=0.0.2
+PKG_VERSION:=20190616
+PKG_RELEASE:=0.0.3
 PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
 
 # OpenWrt ARCH: arm, i386, x86_64, mips, mipsel
